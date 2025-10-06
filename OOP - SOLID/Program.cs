@@ -1,4 +1,5 @@
 ﻿using OOP___SOLID;
+using OOP___SOLID.D;
 using OOP___SOLID.O;
 using OOP___SOLID.S;
 using System;
@@ -34,6 +35,8 @@ namespace SolidPrinciplesDemo
                 new SrpGoodExampleCommand(),
                 new OcpBadExampleCommand(),
                 new OcpGoodExampleCommand(),
+                new DipBadExampleCommand(),      // ← ДОДАНО
+                new DipGoodExampleCommand(),     // ← ДОДАНО
                 new ExitCommand()
             };
         }
