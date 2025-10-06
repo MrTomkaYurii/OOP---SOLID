@@ -1,11 +1,9 @@
 ﻿using OOP___SOLID;
 using OOP___SOLID.D;
 using OOP___SOLID.I;
+using OOP___SOLID.L;
 using OOP___SOLID.O;
 using OOP___SOLID.S;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 
 namespace SolidPrinciplesDemo
@@ -38,9 +36,10 @@ namespace SolidPrinciplesDemo
                 new OcpGoodExampleCommand(),
                 new DipBadExampleCommand(),      // ← ДОДАНО
                 new DipGoodExampleCommand(),     // ← ДОДАНО
-
                 new IspBadExampleCommand(),
                 new IspGoodExampleCommand(),
+                new LspBadExampleCommand(),      // ← ДОДАТИ
+                new LspGoodExampleCommand(),     // ← ДОДАТИ
                 new ExitCommand()
             };
         }
@@ -50,9 +49,9 @@ namespace SolidPrinciplesDemo
             while (true)
             {
                 Console.Clear();
-                Console.WriteLine("╔════════════════════════════════════════════════════════════╗");
-                Console.WriteLine("║     ДЕМОНСТРАЦІЯ SOLID ПРИНЦИПІВ                           ║");
-                Console.WriteLine("╚════════════════════════════════════════════════════════════╝\n");
+                Console.WriteLine("╔════════════════════════════════════════════════════════════════════╗");
+                Console.WriteLine("║                    ДЕМОНСТРАЦІЯ SOLID ПРИНЦИПІВ                    ║");
+                Console.WriteLine("╚════════════════════════════════════════════════════════════════════╝\n");
 
                 for (int i = 0; i < _commands.Count; i++)
                 {
